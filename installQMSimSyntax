@@ -1,0 +1,92 @@
+#!/bin/bash
+
+#===========================================================================#
+
+# installQMSimSyntax
+# 	This bash script will install the syntax highlighting files for QMSim
+
+# 	Note: Please make sure this file is executable with:
+#		chmod 775 installQMSimSyntax
+
+# 	Make sure syntax highlighting is turned on in vim with:
+# 	:syntax on 
+# 	or put this line into .vimrc so you don't have to set it everytime
+
+#===========================================================================#
+
+# Instructions if you want to do it yourself
+# 1) Create .vim directory in your home folder (find with echo $HOME)
+# 2) Create 2 subdirectories with mkdir
+#  		a) syntax
+# 		b) ftdetect
+# 3) Move prm.vim into the syntax folder
+# 4) Move prm.vim_ftdetect into the ftdect folder
+# 		a) Rename this file to simply prm.vim
+# 5) Make sure all QMSim files have the .prm extension
+# 		Otherwise they will not be recognized and not highlighted by vim
+
+#===========================================================================#
+
+# This part will do it for you automatically
+
+# Create needed directories (if it exists, it will not be overwritten)
+
+# Create the .vim directory if needed
+if [ -d ~/.vim ]; then
+	echo "The ~/.vim directory is present in the home directory."
+else
+	echo "The ~/.vim directory was not found and will be created for you." 
+	mkdir ~/.vim
+fi
+
+# Create the .vim/syntax directory if needed
+if [ -d ~/.vim/syntax ]; then
+	echo "The syntax directory is present in the .vim directory."
+else
+	echo "The syntax directory was not found and will be created for you."
+	mkdir ~/.vim/syntax
+fi
+
+# Create the .vim/ftdetet directory if needed
+if [ -d ~/.vim/ftdetect ]; then
+	echo "The ftdetect directory is present in the .vim directory."
+else
+	echo "The ftdetect directory was not found and will be created for you."
+	mkdir ~/.vim/ftdetect
+fi
+
+# Check for both prm.vim and prm.vim_ftdetect files in the current directory
+# If not there it will give an error message
+
+# Look for the prm.vim file
+if [ -e prm.vim ]; then
+	echo "prm.vim file is present in the current working directory."
+else
+	echo -e "ERROR: The prm.vim file cannot be cound in the current working directory.\n \tPlease make sure the file is present in the current working directory." >&2
+	exit 1
+fi
+
+# Look for the prm.vim_ftdetect file
+if [ -e prm.vim_ftdetect ]; then
+	echo "prm.vim_ftdetect file is present in the current working directory."
+else
+	echo -e "ERROR: The prm.vim_ftdetect file cannot be cound in the current working directory.\n \tPlease make sure the file is present in the current working directory." >&2
+	exit 1
+fi
+
+# Copy the files into the right directories
+	cp prm.vim ~/.vim/syntax/
+	cp prm.vim_ftdetect ~/.vim/ftdetect/
+
+# Rename prm.vim_ftdetect to prm.vim
+	mv ~/.vim/ftdetect/prm.vim_ftdetect ~/.vim/ftdetect/prm.vim
+
+# Complete!
+	printf "Complete!\n Please make sure syntax highlighting is turned on in vim\n"
+
+
+
+
+
+
+
