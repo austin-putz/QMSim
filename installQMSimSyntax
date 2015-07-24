@@ -1,6 +1,17 @@
 #!/bin/bash
 
-#===========================================================================#
+#==============================================================================#
+
+#------------------------------------------------------------------------------#
+# Description
+#------------------------------------------------------------------------------#
+
+# vim syntax highlighting file for BLUPF90 programs
+
+# Author:   Austin Putz <putz[dot]austin[at]gmail[dot]com>
+# Created:  Unknown
+# Modified: 2015-07-23
+# License:  GPLv2
 
 # installQMSimSyntax
 # 	This bash script will install the syntax highlighting files for QMSim
@@ -12,7 +23,7 @@
 # 	:syntax on 
 # 	or put this line into .vimrc so you don't have to set it everytime
 
-#===========================================================================#
+#==============================================================================#
 
 # Instructions if you want to do it yourself
 # 1) Create .vim directory in your home folder (find with echo $HOME)
@@ -25,7 +36,7 @@
 # 5) Make sure all QMSim files have the .prm extension
 # 		Otherwise they will not be recognized and not highlighted by vim
 
-#===========================================================================#
+#==============================================================================#
 
 # This part will do it for you automatically
 

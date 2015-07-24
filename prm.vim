@@ -1,7 +1,13 @@
-" Vim syntax highlighting file
-" for QMSim parameter files
-" Maintainer: Austin Putz (putz.austin@gmail.com or amputz@ncsu.edu)
-" Latest version: 2015-03-02
+"------------------------------------------------------------------------------"
+" Description
+"------------------------------------------------------------------------------"
+
+" vim syntax highlighting file for BLUPF90 programs
+
+" Author:   Austin Putz <putz[dot]austin[at]gmail[dot]com>
+" Created:  Unknown
+" Modified: 2015-07-23
+" License:  GPLv2
 
 " Please contact me if you find errors or I forgot a keyword (email above).
 
