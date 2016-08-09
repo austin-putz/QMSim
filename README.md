@@ -3,7 +3,7 @@
 
 Random things on QMSim
 
-0. vim syntax highlighting files
+* vim syntax highlighting files
 
 ## QMSim vim syntax highlighting
 ---------------------------
