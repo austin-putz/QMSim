@@ -1,12 +1,14 @@
 # QMSim
+============
 
 Random things on QMSim
 
 1) vim syntax highlighting files
 
 ## QMSim vim syntax highlighting
+-------------
 
-O. installQMSimSyntax
+1. installQMSimSyntax
 
 
 
