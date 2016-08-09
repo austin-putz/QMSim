@@ -18,6 +18,14 @@ chmod 775 installQMSimSyntax
 
 Make sure that `prm.vim` and `prm.vim_ftdetect` are in the same directory (folder). 
 
+Then simply run with:
+
+```
+./installQMSimSyntax
+```
+
+Contact me with questions if you can't get it to work. I haven't tested it that well. 
+
 
 
 
