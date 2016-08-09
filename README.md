@@ -6,7 +6,7 @@ Random things on QMSim
 
 ## QMSim vim syntax highlighting
 
-```installQMSimSyntax``` 
+installQMSimSyntax
 
 
 
