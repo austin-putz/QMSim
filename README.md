@@ -8,7 +8,7 @@ Random things on QMSim
 ## QMSim vim syntax highlighting
 -------------
 
-1. installQMSimSyntax
+0. installQMSimSyntax
 
 
 
