@@ -16,7 +16,7 @@ Use the following to change it an executable:
 chmod 775 installQMSimSyntax
 ```
 
-Make sure that `qmsim_syntax` and `qmsim_ftdetect` are in the same directory (folder). 
+Make sure that `prm.vim` and `prm.vim_ftdetect` are in the same directory (folder). 
 
 
 
